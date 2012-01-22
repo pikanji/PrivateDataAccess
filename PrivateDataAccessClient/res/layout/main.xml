@@ -11,9 +11,15 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
     <TextView
+        android:id="@+id/text_direct_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" />
+    
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/message"
-        android:paddingTop="30dp" />
+        android:paddingTop="20dp" />
 
 </LinearLayout>

@@ -24,7 +24,7 @@ public class PrivateDataAccessServerActivity extends Activity implements View.On
         setContentView(R.layout.main);
         
         TextView textPid = (TextView) findViewById(R.id.text_pid);
-        textPid.setText(String.valueOf(Process.myPid()));
+        textPid.setText("PID: " + String.valueOf(Process.myPid()));
         
         mButtonSave = (Button) findViewById(R.id.button_save);
         mButtonSave.setOnClickListener(this);
@@ -34,7 +34,7 @@ public class PrivateDataAccessServerActivity extends Activity implements View.On
         mEditSave = (EditText) findViewById(R.id.edit_save);
         mTextLoad = (TextView) findViewById(R.id.text_load);
         
-        mSp = this.getPreferences(MODE_PRIVATE);
+        mSp = this.getSharedPreferences("server_data", MODE_PRIVATE);
         mEditor = mSp.edit();
         
     }
